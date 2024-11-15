@@ -4,7 +4,7 @@ using namespace std;
 class Tablica {
 public:
 
-    int *Table;
+    int *Table; // jak poprzednio
 
     // Konstruktor domyślny
     Tablica() {
@@ -26,7 +26,7 @@ public:
    
 };
 
-int main() {
+int main() { // Prosze tworzyc obiekty takze w pamieci dyamicznej
   
     // Użycie konstruktora domyślnego
     Tablica tablica1;
