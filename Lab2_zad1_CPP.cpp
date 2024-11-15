@@ -6,7 +6,7 @@ private:
 
 public:
 
-    string marka;
+    string marka; // atrybuty zwyczajowo umieszcza sie w sekcji private
     string model;
     int rokProdukcji;
 
@@ -26,7 +26,7 @@ public:
     
     // Destruktor
     ~Samochod() {
-        cout << "Destruktor wywołany dla: " << marka << " " << model << endl;
+        cout << "Destruktor wywołany dla: " << marka << " " << model << endl; // informacja o likwidacji  obiektu?
     }
    
     // Metoda wyświetlania danych
