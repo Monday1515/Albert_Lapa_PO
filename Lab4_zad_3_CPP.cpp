@@ -6,10 +6,10 @@ class Pracownik {
 protected:
     string stanowisko = "Teacher";
     float wynagrodzenie = 28.1;
-};
+}; // jakis konstruktor? destruktor? metoda (ew. czyxto) wirtualna pokazDane()?
 
 class Administracja : protected Pracownik {
-    public:
+    public:            // tutaj też nie widać konstruktora i destruktora
 
         string getPositionAdm() {
             return stanowisko;
@@ -24,7 +24,7 @@ class Administracja : protected Pracownik {
 };
 
 class Nauczyciel : protected Pracownik {
-    public:
+    public:    // j.w.
     
         void pokazDane() {
             cout << "Nauczyciel: " << stanowisko << ". Na wiecej nie mam uprawnien ):" << endl;
@@ -33,7 +33,7 @@ class Nauczyciel : protected Pracownik {
 
 int main() {
 
-    Administracja szefu;
+    Administracja szefu; // proszę tworzyć obiekty także w pamięci dynamicznej
     szefu.pokazDane();
 
     Nauczyciel kamil;
