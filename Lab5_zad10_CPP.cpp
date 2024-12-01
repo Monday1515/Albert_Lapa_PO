@@ -1,4 +1,5 @@
-#include <iostream>
+#include <iostream>  // przejrzałam rozwiązania wszystkich zadań z C++
+// poniższe jest poprawne
 using namespace std;
 
 class Pojazd {
