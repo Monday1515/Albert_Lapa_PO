@@ -42,7 +42,7 @@ class Rower : public Pojazd {
     }
 };
 
-int main() {
+int main() {  // jakie wnioski płyną ze zmiany trybu dziedziczenia na protected/private ?
 
     Samochod Corolla;
     Rower Cross;
