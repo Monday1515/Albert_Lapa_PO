@@ -3,7 +3,7 @@ using namespace std;
 
 class Pojazd {
     public:
-    void przyspiesz() {
+    void przyspiesz() {  // tutaj nalezy zalozyc rodzine metod wirtualnych przyspiesz()
         cout << "This car is accelerating...\n";
     }
 };
@@ -22,7 +22,7 @@ class ElektrycznySamochod : public Samochod {
     }
 };
 
-int main() {
+int main() { // i znowu - kiepska ilustracja problemu
     ElektrycznySamochod Rivian;
     Rivian.przyspiesz();
 }
