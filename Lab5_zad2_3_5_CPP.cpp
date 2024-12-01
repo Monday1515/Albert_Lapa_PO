@@ -39,9 +39,9 @@ class Rower : public Pojazd {
     }
 };
 
-int main() {
+int main() {             // kiepska ilustracja polimorfizmu
 
-    Samochod Corolla;
+    Samochod Corolla;   
     Rower Cross;
 
     Corolla.przyspiesz();
