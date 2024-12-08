@@ -23,7 +23,7 @@ class Samochod : public Pojazd {
     }
     void zatrzymaj() {
         cout << "Stopping the car...\n";
-    }
+    } // szkoda, że nie zdefniował Pan destruktorów w klasach pochodnych 
 };
 
 class Rower : public Pojazd {
@@ -56,7 +56,7 @@ class Skuter : public Pojazd {
     }
 };
 
-int main() {
+int main() { // brakuje w rozwiazaniu wskaźników inteligentnych (zadanie 3)
     vector<Pojazd*> pojazdy = {new Samochod(), new Rower(), new Motocykl(), new Skuter()};
     for (Pojazd* pojazd : pojazdy) {
         pojazd->przyspiesz();
