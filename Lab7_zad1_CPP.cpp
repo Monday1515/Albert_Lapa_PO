@@ -23,7 +23,7 @@ public:
     }
 
     // wyświetlanie danych osoby
-    void displayUser() const {
+    void displayUser() const { // a tej metody własnie być nie powinno w tej klasie
         cout << "Name: " << name << ", Age: " << age << endl;
     }
 };
