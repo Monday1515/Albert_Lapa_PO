@@ -1,10 +1,9 @@
 #include <iostream>
-#include <string>
 #include <fstream>
+#include <string>
 
 using namespace std;
 
-// dane osoby
 class User {
 private:
     string name;
@@ -21,10 +20,13 @@ public:
     int getAge() const {
         return age;
     }
+};
 
-    // wyświetlanie danych osoby
-    void displayUser() const { // a tej metody własnie być nie powinno w tej klasie
-        cout << "Name: " << name << ", Age: " << age << endl;
+// wyświetlanie danych osoby
+class UserDisplayer {
+public:
+    void displayUser(const User& user) const {
+        cout << "Name: " << user.getName() << ", Age: " << user.getAge() << endl;
     }
 };
 
@@ -45,13 +47,18 @@ public:
 
 int main() {
 
-    User user1("Czarek", 21);
+    User user("John Doe", 30);
+    User user1("Czarek", 19);
     User user2("Mati", 20);
 
-    user1.displayUser();
-    user2.displayUser();
-
+    UserDisplayer displayer;
     UserSaver saver;
+
+    displayer.displayUser(user);
+    displayer.displayUser(user1);
+    displayer.displayUser(user2);
+
+    saver.saveUser(user, "users.txt");
     saver.saveUser(user1, "users.txt");
     saver.saveUser(user2, "users.txt");
 
