@@ -1,5 +1,5 @@
-interface Discount {
-    double calculate(double price);
+interface Discount { // poprawnie
+      double calculate(double price);
 }
 
 class RegularDiscount implements Discount {
