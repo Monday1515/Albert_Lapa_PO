@@ -24,7 +24,7 @@ class Rectangle implements Shape {
     }
 }
 
-// Square jest teraz niezaleznym obiektem Shape
+// Square jest teraz niezaleznym obiektem Shape   // ...obiektem implementującym Shape; Ale, mógłby śmiało  dziedziczyc po Rectangle
 class Square implements Shape {
     private double side;
 
